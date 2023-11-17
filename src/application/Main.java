@@ -20,21 +20,18 @@ public class Main {
         p1.preco = sc.nextDouble();
         p1.quantidade = sc.nextInt();
 
-        System.out.println("Dados do produto: " + p1.nome + ", " + p1.preco
-                + ", " + p1.quantidade + ", " + p1.valorTotalEmEstoque());
+        System.out.println("Dados do produto: " + p1);
 
         System.out.println("Entre com o número de produtos para ser adicionado no estoque: ");
-        int quant = sc.nextInt();
-        p1.addProduto(quant);
+        int quantAdiciona = sc.nextInt();
+        p1.addProduto(quantAdiciona);
 
-        System.out.println("Dados atualizados: " + p1.nome + ", " + p1.preco
-                + ", " + p1.quantidade + ", " + p1.valorTotalEmEstoque());
+        System.out.println("Dados atualizados: " + p1);
 
         System.out.println("Entre com o número de produtos para ser Removido no estoque: ");
         int quantRemove = sc.nextInt();
-        p1.removeProduto(quant);
+        p1.removeProduto(quantRemove);
 
-        System.out.println("Dados atualizados: " + p1.nome + ", " + p1.preco
-                + ", " + p1.quantidade + ", " + p1.valorTotalEmEstoque());
+        System.out.println("Dados atualizados: " + p1);
     }
 }
